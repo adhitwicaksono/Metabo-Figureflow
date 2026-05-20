@@ -83,7 +83,7 @@ Metabo-Figureflow/
 ├── rafflesia_lcms_group_average_feature_table.xlsx
 ├── pca_3d_sample_groups.py
 ├── pca_3d_supergroups.py
-└── stacked_bar_top20_compounds_tss.py
+└── stacked_bar_top20_compounds.py
 ```
 
 A more organized structure can also be used:
