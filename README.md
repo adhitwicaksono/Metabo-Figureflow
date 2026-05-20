@@ -57,11 +57,11 @@ In other words, Metabo-Figureflow is best understood as a **study-specific downs
 
 Several established tools and platforms already support metabolomics preprocessing, statistical analysis, visualization, and interpretation. For example:
 
-- **XCMS** supports LC/MS peak detection, nonlinear retention-time alignment, peak matching, and metabolite profiling workflows.
-- **MZmine** provides modular mass-spectrometry processing, visualization, and annotation workflows.
-- **MS-DIAL** supports deconvolution, identification, and quantification of small molecules from LC-MS/MS datasets.
-- **MetaboAnalyst** provides web-based statistical, functional, and visualization workflows for metabolomics datasets.
-- **Workflow4Metabolomics** provides Galaxy-based metabolomics workflows with emphasis on reproducibility, sharing, and workflow publication.
+- **XCMS** supports LC/MS peak detection, nonlinear retention-time alignment, peak matching, and metabolite profiling workflows (Smith et al., 2006).
+- **MZmine** provides modular mass-spectrometry data processing, visualization, feature-table generation, and compound annotation workflows (Pluskal et al., 2010; Heuckeroth et al., 2024).
+- **MS-DIAL** supports deconvolution, identification, and quantification of small molecules from LC-MS/MS datasets (Tsugawa et al., 2015).
+- **MetaboAnalyst** provides web-based statistical, functional, and visualization workflows for metabolomics datasets (Xia et al., 2009; Pang et al., 2024).
+- **Workflow4Metabolomics** provides Galaxy-based metabolomics workflows with emphasis on reproducibility, sharing, and workflow publication (Giacomoni et al., 2015; Guitton et al., 2017).
 
 Metabo-Figureflow is complementary to these platforms. It assumes that upstream LC-MS processing and annotation have already been completed elsewhere, and it only handles downstream plotting and summary export from curated feature tables.
 
@@ -532,3 +532,5 @@ Pluskal, T., Castillo, S., Villar-Briones, A., & Orešič, M. (2010). MZmine 2: 
 Smith, C. A., Want, E. J., O'Maille, G., Abagyan, R., & Siuzdak, G. (2006). XCMS: Processing mass spectrometry data for metabolite profiling using nonlinear peak alignment, matching, and identification. *Analytical Chemistry, 78*(3), 779–787. https://doi.org/10.1021/ac051437y
 
 Tsugawa, H., Cajka, T., Kind, T., Ma, Y., Higgins, B., Ikeda, K., Kanazawa, M., VanderGheynst, J., Fiehn, O., & Arita, M. (2015). MS-DIAL: data-independent MS/MS deconvolution for comprehensive metabolome analysis. *Nature Methods, 12*, 523–526. https://doi.org/10.1038/nmeth.3393
+
+Xia, J., Psychogios, N., Young, N., & Wishart, D. S. (2009). MetaboAnalyst: A web server for metabolomic data analysis and interpretation. *Nucleic Acids Research, 37*(Web Server issue), W652–W660.
