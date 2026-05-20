@@ -359,7 +359,7 @@ top20_compounds_TSS.csv
 
 ## AI assistance declaration
 
-Generative AI tools were used as coding assistants to help draft, refine, troubleshoot, and document Python scripts for figure generation and downstream summary export.
+Generative AI (ChaGPT 5.5, OpenAI) was used as coding assistants to help draft, refine, troubleshoot, and document Python scripts for figure generation and downstream summary export.
 
 All scripts were reviewed, edited, executed, and validated by human users during development. The generated figures and exported files were checked for successful execution and consistency with the intended data structure. Biological interpretation, manuscript conclusions, and responsibility for the final analyses remain with the authors.
 
