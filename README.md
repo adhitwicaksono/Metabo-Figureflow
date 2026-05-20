@@ -6,7 +6,7 @@
 
 **Metabo-Figureflow** is a lightweight Python workflow for generating reproducible metabolomics figures and summary tables from curated LC-MS feature tables.
 
-This repository was developed for the manuscript:
+This repository was developed for the manuscript (currently in submission):
 
 > **Untargeted metabolomics reveals host responses and metabolites linked to host compatibility in Rafflesiaceae parasitism**  
 > Jeanmaire Molina, Rinat Abzalimov, Pride Yin, Adhityo Wicaksono, Marco Bürger, James Hill, Faith Bernier, Jun Wen, Susan Pell
