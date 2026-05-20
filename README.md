@@ -1,4 +1,6 @@
-![Metabo-Figureflow banner](metabo_figureflow_banner.png)
+<p align="center">
+  <img src="assets/metabo_figureflow_banner.png" alt="Metabo-Figureflow banner" width="100%">
+</p>
 
 # Metabo-Figureflow
 
