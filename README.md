@@ -95,11 +95,11 @@ Metabo-Figureflow/
 ├── data/
 │   ├── rafflesia_lcms_feature_table.xlsx
 │   └── rafflesia_lcms_group_average_feature_table.xlsx
-├── scripts/
-│   ├── pca_3d_sample_groups.py
-│   ├── pca_3d_supergroups.py
-│   └── stacked_bar_top20_compounds_tss.py
-└── outputs/
+└── scripts/
+    ├── pca_3d_sample_groups.py
+    ├── pca_3d_supergroups.py
+    └── stacked_bar_top20_compounds.py
+
 ```
 
 If using separate `data/` and `scripts/` folders, update the input file paths inside the scripts accordingly.
