@@ -1,4 +1,4 @@
-![Metabo-Figureflow banner](metabo-figureflow-banner.png)
+![Metabo-Figureflow banner](metabo_figureflow_banner.png)
 
 # Metabo-Figureflow
 
