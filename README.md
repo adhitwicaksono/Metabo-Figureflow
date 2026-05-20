@@ -92,6 +92,8 @@ A more organized structure can also be used:
 Metabo-Figureflow/
 ├── README.md
 ├── requirements.txt
+├── assets/
+│   └── metabo-figureflow-banner.png
 ├── data/
 │   ├── rafflesia_lcms_feature_table.xlsx
 │   └── rafflesia_lcms_group_average_feature_table.xlsx
