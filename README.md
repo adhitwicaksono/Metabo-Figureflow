@@ -1,3 +1,5 @@
+![Metabo-Figureflow banner](metabo-figureflow-banner.png)
+
 # Metabo-Figureflow
 
 **Metabo-Figureflow** is a lightweight Python workflow for generating reproducible metabolomics figures and summary tables from curated LC-MS feature tables.
