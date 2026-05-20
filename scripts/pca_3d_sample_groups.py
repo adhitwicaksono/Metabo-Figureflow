@@ -84,8 +84,6 @@ legend_order = [
     "raffseed","Ampelopsis"
 ]
 
-import numpy as np
-import matplotlib.pyplot as plt
 fig = plt.figure(figsize=(11, 8))
 ax = fig.add_subplot(111, projection="3d")
 
@@ -114,14 +112,27 @@ else:
     ax.legend(title="Group", bbox_to_anchor=(1.02, 1), loc="upper left", frameon=False)
 
 plt.tight_layout()
-plt.show()
 
-# Optional: export PCA scores & loadings
-import pandas as pd
-scores_df = pd.DataFrame(scores, index=X.index, columns=["PC1","PC2","PC3"])
+# --- 8) Export PCA scores & loadings ---
+scores_out = "PCA_scores_autoscaled_main-data.csv"
+loadings_out = "PCA_loadings_autoscaled_main-data.csv"
+
+scores_df = pd.DataFrame(scores, index=X.index, columns=["PC1", "PC2", "PC3"])
 scores_df["Group"] = groups
-loadings_df = pd.DataFrame(pca.components_.T, index=df.index, columns=["PC1","PC2","PC3"])
+loadings_df = pd.DataFrame(pca.components_.T, index=df.index, columns=["PC1", "PC2", "PC3"])
 
-scores_df.to_csv("PCA_scores_autoscaled_main-data.csv")
-loadings_df.to_csv("PCA_loadings_autoscaled_main-data.csv")
-print("Saved: PCA_scores_autoscaled_main-data.csv, PCA_loadings_autoscaled_main-data.csv")
+scores_df.to_csv(scores_out)
+loadings_df.to_csv(loadings_out)
+
+# --- 9) Save figure files ---
+figure_png = "PCA_3D_sample_groups.png"
+figure_svg = "PCA_3D_sample_groups.svg"
+
+fig.savefig(figure_png, dpi=300, bbox_inches="tight")
+fig.savefig(figure_svg, bbox_inches="tight")
+
+print("Saved:", scores_out, loadings_out, figure_png, figure_svg)
+
+# --- 10) Show interactive Matplotlib window ---
+plt.show()
+plt.close(fig)
