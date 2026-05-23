@@ -95,6 +95,7 @@ Metabo-Figureflow/
 ├── assets/
 │   └── metabo-figureflow-banner.png
 ├── data/
+│   ├── examples
 │   ├── rafflesia_lcms_feature_table.xlsx
 │   └── rafflesia_lcms_group_average_feature_table.xlsx
 └── scripts/
