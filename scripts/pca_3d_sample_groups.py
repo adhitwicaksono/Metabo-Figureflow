@@ -93,7 +93,7 @@ for g in legend_order:
         continue
     col, mk = style[g]
     ax.scatter(scores[idx,0], scores[idx,1], scores[idx,2],
-               s=70, c=col, marker=mk, edgecolor="k", alpha=1.0, depthshade=False, label=g)
+               s=70, c=col, marker=mk, edgecolor="none", alpha=1.0, depthshade=False, label=g)
 
 ax.set_xlabel(f"PC1 ({ve[0]:.1f}%)")
 ax.set_ylabel(f"PC2 ({ve[1]:.1f}%)")
@@ -107,9 +107,9 @@ handles, labels = ax.get_legend_handles_labels()
 ordered = [(h,l) for g in legend_order for h,l in zip(handles, labels) if l == g]
 if ordered:
     h_ord, l_ord = zip(*ordered)
-    ax.legend(h_ord, l_ord, title="Group", bbox_to_anchor=(1.02, 1), loc="upper left", frameon=False)
+    ax.legend(h_ord, l_ord, title="Group", bbox_to_anchor=(1.02, 1), loc="upper left", frameon=True)
 else:
-    ax.legend(title="Group", bbox_to_anchor=(1.02, 1), loc="upper left", frameon=False)
+    ax.legend(title="Group", bbox_to_anchor=(1.02, 1), loc="upper left", frameon=True)
 
 plt.tight_layout()
 
