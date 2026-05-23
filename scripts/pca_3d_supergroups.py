@@ -82,14 +82,14 @@ for g in order:
     ax.scatter(
         sub["PC1"], sub["PC2"], sub["PC3"],
         c=color, marker=marker, s=70,
-        edgecolor="k", alpha=1.0, depthshade=False, label=g
+        edgecolor="none", alpha=1.0, depthshade=False, label=g
     )
 
 ax.set_xlabel(f"PC1 ({ve[0]:.1f}%)")
 ax.set_ylabel(f"PC2 ({ve[1]:.1f}%)")
 ax.set_zlabel(f"PC3 ({ve[2]:.1f}%)")
 ax.view_init(elev=22, azim=-35)
-ax.legend(title="Supergroup", bbox_to_anchor=(1.02, 1), loc="upper left", frameon=False)
+ax.legend(title="Supergroup", bbox_to_anchor=(1.02, 1), loc="upper left", frameon=True)
 plt.tight_layout()
 
 # --- Export scores and loadings before opening the interactive plot window ---
